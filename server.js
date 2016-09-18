@@ -16,7 +16,7 @@ app.get('/article-one', function (req, res)
 
 app.get('/article-two', function (req, res) 
 {
-  res.send('Valli Sarma Vedula- Article Two');
+res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
 });
 
 app.get('/article-three', function (req, res) 
